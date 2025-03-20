@@ -70,3 +70,24 @@ function ex7(n1,n2,n3){
     let aritimetica = (Number(n1) + Number(n2) + Number(n3) )/3;
     document.getElementById("mensagem7").innerHTML = "A media é " + aritimetica + "</br>";
 }
+
+function ex8(peso,altura){
+
+    peso = document.getElementById("peso").value;
+    altura = document.getElementById("altura").value;
+
+    let imc = Number(peso) / Number(altura)**2;
+
+    document.getElementById("mensagem8").innerHTML = "O imc é " + imc + "</br>";
+}
+
+
+function ex9 (porc, valor, juros){
+
+    n1 = document.getElementById("Nota1").value;
+    n1 = document.getElementById("Nota1").value;
+    n1 = document.getElementById("Nota1").value;
+
+
+
+}
