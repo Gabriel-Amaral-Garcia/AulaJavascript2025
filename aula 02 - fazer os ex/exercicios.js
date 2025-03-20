@@ -45,3 +45,28 @@ function ex5(lado)
 
     document.getElementById("mensagem5").innerHTML = "O lado do quadrado é " + lado + "<br><br><b>A area do quadrado é : " + areaQuadrado + "</b>";
 }
+
+
+function ex6(qtd,preco){
+
+    let des = 1.10;
+
+    qtd = document.getElementById("produto").value;
+    preco = document.getElementById("preco").value;
+
+    let subtotal = Number(qtd)* Number(preco);
+    let valor = Number(subtotal) - Number(des);
+    document.getElementById("mensagem6").innerHTML = "O valor final a pagar é " + valor + "</br>";
+
+}
+
+
+function ex7(n1,n2,n3){
+
+    n1 = document.getElementById("Nota1").value;
+    n2 = document.getElementById("Nota2").value;
+    n3 = document.getElementById("Nota3").value;
+
+    let aritimetica = (Number(n1) + Number(n2) + Number(n3) )/3;
+    document.getElementById("mensagem7").innerHTML = "A media é " + aritimetica + "</br>";
+}
