@@ -88,6 +88,7 @@ function ex9 (porc, valor, juros){
     valor = document.getElementById("valor").value;
     juros = document.getElementById("juros").value;
 
-
-
+    let sla = (Number(valor)*(porc))/100;
+    let n = Number(juros) + Number(sla);
+    document.getElementById("mensagem9").innerHTML = "sla" + n + "</br>";
 }
