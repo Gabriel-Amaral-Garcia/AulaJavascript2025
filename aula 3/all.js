@@ -70,7 +70,7 @@ function dez(n1,n2){
         document.getElementById("m5").innerHTML ="codigo invalido " + "</br>";
     }
 */
-    switch(Number(n1)) {
+    switch(n1) {
         case "5":
             n3 = n2 * 500;
             document.getElementById("m5").innerHTML ="tenis nike " + "preço 500" + "e o valor total" + n3 +"</br>";
@@ -82,9 +82,34 @@ function dez(n1,n2){
         default:
             document.getElementById("m5").innerHTML ="codigo invalido " + "</br>";
     }
+
 }
 
+function ex11(qtde,preco,codigo){
 
+    qtde = document.getElementById("qtde").value;
+    preco = document.getElementById("preco").value;
+    codigo = document.getElementById("codigo").value;
+
+
+
+
+    if(codigo >= 1 && codigo <= 10 || codigo >= 20 && codigo <= 25) {
+
+            subtotal = qtde * preco;
+            valortotal = subtotal + 10;
+            document.getElementById("m11").innerHTML = "o valor total a pagar é: " + valortotal + "</br>";
+    }else{
+        document.getElementById("m11").innerHTML = "codigo invalido" + "</br>";
+    }
+
+
+    
+  
+
+
+
+}
 
 
 
